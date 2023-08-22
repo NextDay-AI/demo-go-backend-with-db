@@ -1,0 +1,13 @@
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  name: demo-go-backend-with-db
+spec:
+  id: demo-go-backend-with-db
+  parameters:
+    namespace: production
+    image: docker.io/vfarcic/demo-go-backend-with-db:0.0.0
+    host: acme.com
+  compositionSelector:
+    matchLabels:
+      type: backend-db-local
