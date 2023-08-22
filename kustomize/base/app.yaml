@@ -1,0 +1,22 @@
+---
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  annotations:
+    gitHubOrg: NextDay-AI
+    gitHubRepo: demo-go-backend-with-db
+  name: demo-go-backend-with-db
+spec:
+  id: demo-go-backend-with-db
+  compositionSelector:
+    matchLabels:
+      type: backend-db-aws
+      location: local
+  parameters:
+    namespace: development
+    image: docker.io/cyrillenextdayai/demo-go-backend-with-db:latest
+    port: 8080
+    host: acme.com
+    db:
+      version: "13"
+      size: medium

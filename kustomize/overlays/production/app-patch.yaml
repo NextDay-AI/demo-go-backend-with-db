@@ -1,0 +1,8 @@
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  name: demo-go-backend-with-db
+spec:
+  parameters:
+    namespace: production
+    image: docker.io/vfarcic/demo-go-backend-with-db:0.0.0

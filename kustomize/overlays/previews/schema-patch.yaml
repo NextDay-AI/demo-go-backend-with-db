@@ -1,0 +1,13 @@
+apiVersion: databases.schemahero.io/v1alpha4
+kind: Database
+metadata:
+  name: demo-go-backend-with-db
+spec:
+  connection:
+    postgres:
+      host:
+        value: demo-go-backend-with-db-postgresql
+      password: 
+        valueFrom:
+          secretKeyRef:
+            name: demo-go-backend-with-db-postgresql
