@@ -17,10 +17,10 @@ func main() {
 		port = "8080"
 	}
 	router.Run(fmt.Sprintf(":%s", port))
-	log.Println("This is silly. Convert it into something great!")
+	log.Println("This is silly but enough for a demo!")
 }
 
 func rootHandler(ctx *gin.Context) {
-	output := "This is a silly demo"
+	output := "This is a silly demo, perhaps good enough?"
 	ctx.String(http.StatusOK, output)
 }
