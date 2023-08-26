@@ -5,4 +5,4 @@ metadata:
 spec:
   parameters:
     namespace: production
-    image: docker.io/vfarcic/demo-go-backend-with-db:0.0.0
+    image: docker.io/cyrillenextdayai/demo-go-backend-with-db:0.0.3
